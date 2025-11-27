@@ -1,16 +1,100 @@
-# React + Vite
+# Project Task Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive task management dashboard built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📊 **Dashboard View** - View all tasks in a clean grid layout
+- 🔍 **Status Filtering** - Filter tasks by All, Pending, In Progress, or Completed
+- ➕ **Create Tasks** - Add new tasks with a modal form and validation
+- 📱 **Responsive Design** - Mobile-friendly with hamburger menu
+- 🎨 **Modern UI** - Clean SaaS-style design with Slate/Indigo color scheme
+- ⚡ **Fast** - Built with Vite for lightning-fast development
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI framework
+- **Vite** - Build tool and dev server
+- **Tailwind CSS 3** - Utility-first CSS framework
+- **Mock Data** - 12 sample tasks for demonstration
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Sidebar.jsx          # Navigation sidebar with mobile menu
+│   ├── TaskCard.jsx         # Individual task card component
+│   ├── TaskForm.jsx         # Modal form for creating tasks
+│   └── LoadingSpinner.jsx   # Loading state component
+├── mockData.js              # Mock task data (12 tasks)
+├── App.jsx                  # Main application component
+├── main.jsx                 # Application entry point
+└── index.css                # Global styles with Tailwind directives
+```
+
+## Deployment
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Click "New Project"
+4. Import your GitHub repository
+5. Vercel will auto-detect Vite settings
+6. Click "Deploy"
+
+### Manual Deployment Steps
+
+```bash
+# Build the project
+npm run build
+
+# The dist/ folder contains your production-ready files
+# Upload the dist/ folder to your hosting provider
+```
+
+## Features Breakdown
+
+### Navigation
+- Sidebar with Dashboard, Team, and Settings views
+- Mobile hamburger menu for small screens
+- Conditional rendering based on active view
+
+### Task Management
+- Display 12 mock tasks using `.map()` function
+- Filter by status (All, Pending, In Progress, Completed)
+- Create new tasks with form validation
+- Tasks include: title, category, status, and priority
+
+### Responsive Design
+- Desktop: 3-column grid layout
+- Tablet: 2-column grid layout
+- Mobile: Single column with collapsible sidebar
+
+## License
+
+MIT
