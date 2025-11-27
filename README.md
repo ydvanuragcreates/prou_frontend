@@ -2,6 +2,24 @@
 
 A modern, responsive task management dashboard built with React, Vite, and Tailwind CSS.
 
+## Screenshots
+
+### Desktop Dashboard View
+![Dashboard Desktop View](screenshots/dashboard-desktop.png)
+*Main dashboard showing all tasks in a 3-column grid layout with sidebar navigation*
+
+### Task Filtering
+![Task Filtering](screenshots/task-filtering.png)
+*Filter tasks by status: All, Pending, In Progress, or Completed*
+
+### Create Task Modal
+![Create Task Modal](screenshots/create-task-modal.png)
+*Modal form for creating new tasks with validation for title, category, status, and priority*
+
+### Mobile Responsive Design
+![Mobile Responsive](screenshots/mobile-responsive.png)
+*Mobile-friendly layout with hamburger menu and single-column task display*
+
 ## Features
 
 - 📊 **Dashboard View** - View all tasks in a clean grid layout
@@ -14,9 +32,18 @@ A modern, responsive task management dashboard built with React, Vite, and Tailw
 ## Tech Stack
 
 - **React 19** - UI framework
-- **Vite** - Build tool and dev server
+- **Vite (Rolldown)** - Build tool and dev server
 - **Tailwind CSS 3** - Utility-first CSS framework
 - **Mock Data** - 12 sample tasks for demonstration
+
+## Key Highlights
+
+✨ **Clean Architecture** - Modular component structure with separation of concerns  
+🎯 **Data-Driven** - Uses `.map()` function to render tasks from mock data  
+🔄 **State Management** - React hooks (useState, useEffect) for managing app state  
+✅ **Form Validation** - Input validation with error messages  
+🎨 **Professional Design** - Slate/Indigo color palette with modern SaaS aesthetics  
+📦 **Production Ready** - Optimized build with Vite for fast loading times
 
 ## Getting Started
 
